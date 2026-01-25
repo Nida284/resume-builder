@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: resume-builder
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    routes:
+      - path: "/*"
+        destination: /index.html
+        methods:
+          - GET
