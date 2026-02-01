@@ -37,10 +37,15 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <ResumeForm resumeData={resumeData} updateResumeData={updateResumeData} resetForm={resetForm} />
-      <ResumePreview resumeData={resumeData} />
-    </div>
+    <>
+      <div className="container">
+        <ResumeForm resumeData={resumeData} updateResumeData={updateResumeData} resetForm={resetForm} />
+        <ResumePreview resumeData={resumeData} />
+      </div>
+      <footer>
+        © 2026 Professional Resume Builder | Built with React
+      </footer>
+    </>
   );
 }
 
